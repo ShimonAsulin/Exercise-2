@@ -16,9 +16,7 @@
   --sp: 1rem;
   --sh4: 0.8rem;
 }
-main {
-  /* font-size: 0; */
-}
+
 
 body {
   font-family: Raleway, sans-serif;
@@ -187,7 +185,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: .5em; */
+  padding: .5em;
 }
 .records-container {
   background-color: var(--white);
@@ -212,38 +210,46 @@ body {
 /* Protfolio */
 
 
+
 .protfolio-header {
-  margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 3em auto;
+    max-width: 1000px;
 }
 .protfolio-head-img {
-  display: block;
   margin: 1em auto;
   width: 65px;
 }
 .protfolio h2 {
   font-size: var(--sh2);
   text-align: center;
+  margin: .5em;
 }
 .protfolio p {
   text-align: center;
+  margin: 0 2em;
   font-size: var(--sp);
 }
-.protfolio-caregory-container {
+.protfolio-category-container {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 1em auto;
 }
-.protfolio-caregory > * {
+.protfolio-category > * {
   text-align: center;
   padding: 0.3em;
-  margin: 0.7em;
+  margin: 0.7em ;
   border-top: 1px dotted #000;
   border-bottom: 1px dotted #000;
 }
-.protfolio-caregory h3 {
+
+.protfolio-category h3 {
   font-size: var(--sh3);
+  line-height: middle
 }
-.protfolio-caregory-img {
+.protfolio-category-img {
   width: 65px;
   display: block;
   margin: 0 auto;
@@ -334,23 +340,57 @@ body {
 
 
 @media screen and (min-width: 600px) {
-  .service-card {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    .service-card {
     width: 300px;
   }
   .service-stats {
     width: 300px;
     background-color: var(--white);
   }
-
-  .protfolio-caregory-container {
+  .protfolio-category {
+    width: 20%;
+}
+  .protfolio-category-container {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 4em 0;
   }
-  .protfolio-caregory {
+  .protfolio-category {
     display: flex;
+    justify-content: center;
   }
-  .protfolio-caregory-img {
+  .protfolio-category-img  {
+    width:50px;
     margin: 0;
+  }
+  .protfolio-category {
+    border-top: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+}
+.protfolio-category > * {
+    text-align: center;
+    padding: 0.3em;
+    margin: 0.7em ;
+    border-top: none;
+    border-bottom:none;
   }
 }
