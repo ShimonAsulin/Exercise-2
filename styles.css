@@ -17,7 +17,6 @@
   --sh4: 0.8rem;
 }
 
-
 body {
   font-family: Raleway, sans-serif;
   /* margin: 0; */
@@ -102,7 +101,6 @@ body {
 }
 .services p {
   font-size: var(--sp);
-  
 }
 
 /* service */
@@ -185,7 +183,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: .5em;
+  padding: 0.5em;
 }
 .records-container {
   background-color: var(--white);
@@ -209,14 +207,12 @@ body {
 
 /* Protfolio */
 
-
-
 .protfolio-header {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    margin: 3em auto;
-    max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3em auto;
+  max-width: 1000px;
 }
 .protfolio-head-img {
   margin: 1em auto;
@@ -225,7 +221,7 @@ body {
 .protfolio h2 {
   font-size: var(--sh2);
   text-align: center;
-  margin: .5em;
+  margin: 0.5em;
 }
 .protfolio p {
   text-align: center;
@@ -240,14 +236,14 @@ body {
 .protfolio-category > * {
   text-align: center;
   padding: 0.3em;
-  margin: 0.7em ;
+  margin: 0.7em;
   border-top: 1px dotted #000;
   border-bottom: 1px dotted #000;
 }
 
 .protfolio-category h3 {
   font-size: var(--sh3);
-  line-height: middle
+  line-height: middle;
 }
 .protfolio-category-img {
   width: 65px;
@@ -278,8 +274,8 @@ body {
 /* view */
 
 .view {
-    position: relative;
-    margin: 0 0 2em;
+  position: relative;
+  margin: 0 0 2em;
 }
 .view-img {
   width: 100%;
@@ -303,61 +299,74 @@ body {
 
 /* Team */
 .team {
-    text-align: center;
-    padding: 1.5em;
+  text-align: center;
+  padding: 1.5em;
 }
 .team-header {
-    margin: 1.5em;
+  margin: 1.5em;
 }
 .team-img {
-    width: 65px;
+  width: 65px;
 }
 .team-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team-card {
-    width: 300px;
-    margin: 1em;
+  width: 300px;
+  margin: 1em;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 3px;
 }
 .team-card-img {
+  position: relative;
 }
 .team-card-img img {
-    width: 250px;
-    border-radius: 3px;
+  width: 100%;
+  border-radius: 3px;
 }
 
 .team-card-img h3 {
-    
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0.3em;
+  background-color: var(--yellow);
 }
 
+.team-card p {
+  font-size: var(--sp);
+  padding: 1em;
+}
 
+/* top-footer */
 
-
-
+.top-footer {
+}
+.colomn-1 {
+  display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+.colomn-1 .black-p {
+    background-color: var(--balck);
+    color: var(--white);
+}
+.yellow-bar {
+  background-color: var(--yellow);
+}
+.colomn-2 p {
+}
+.colomn-2 img {
+  width: 100px;
+}
 
 
 
 @media screen and (min-width: 600px) {
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    .service-card {
+  .service-card {
     width: 300px;
   }
   .service-stats {
@@ -366,7 +375,7 @@ body {
   }
   .protfolio-category {
     width: 20%;
-}
+  }
   .protfolio-category-container {
     display: flex;
     width: 100%;
@@ -378,19 +387,19 @@ body {
     display: flex;
     justify-content: center;
   }
-  .protfolio-category-img  {
-    width:50px;
+  .protfolio-category-img {
+    width: 50px;
     margin: 0;
   }
   .protfolio-category {
     border-top: 1px dotted #000;
     border-bottom: 1px dotted #000;
-}
-.protfolio-category > * {
+  }
+  .protfolio-category > * {
     text-align: center;
     padding: 0.3em;
-    margin: 0.7em ;
+    margin: 0.7em;
     border-top: none;
-    border-bottom:none;
+    border-bottom: none;
   }
 }
